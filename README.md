@@ -119,7 +119,3 @@ This analysis enables business stakeholders to:
   <li>Extend analysis to customer behavior and demand forecasting</li>
 </ol>
 
-<h2><b>About the Author</b></h2>
-<p>
-I am an Aspiring Data Analyst with a strong focus on SQL and business analytics. I enjoy working with real-world datasets and building portfolio projects that reflect practical industry workflows and decision-making processes.
-</p>
