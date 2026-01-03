@@ -11,6 +11,8 @@ This project presents a complete, end-to-end SQL-based data analytics workflow b
 The objective of this project is to simulate how data analysts in retail and e-commerce organizations explore raw catalog data, clean inconsistencies, and generate meaningful business insights related to pricing, inventory, discounts, and revenue optimization using SQL.
 </p>
 
+<hr>
+
 <h2><b>Business Problem</b></h2>
 <p>
 E-commerce platforms manage thousands of SKUs across multiple categories, package sizes, and pricing structures. Raw inventory data often contains inconsistencies such as invalid pricing, duplicate product entries, stock availability issues, and unstructured weight and quantity formats.
@@ -25,6 +27,8 @@ Without proper data cleaning and structured analysis, businesses struggle to:
   <li>Optimize inventory and product assortment</li>
 </ul>
 
+<hr>
+
 <h2><b>Project Objectives</b></h2>
 <ul>
   <li>Design a structured PostgreSQL database for an e-commerce inventory system</li>
@@ -33,6 +37,8 @@ Without proper data cleaning and structured analysis, businesses struggle to:
   <li>Answer business-driven analytical questions using SQL</li>
   <li>Demonstrate job-ready SQL skills for data analyst roles</li>
 </ul>
+
+<hr>
 
 <h2><b>Dataset Overview</b></h2>
 <p>
@@ -53,6 +59,8 @@ Each row in the dataset represents a unique SKU (Stock Keeping Unit). Duplicate 
   <li><b>quantity</b> – Number of units per package</li>
 </ul>
 
+<hr>
+
 <h2><b>Methodology</b></h2>
 <ol>
   <li>Designed a PostgreSQL table with appropriate data types and constraints</li>
@@ -62,6 +70,8 @@ Each row in the dataset represents a unique SKU (Stock Keeping Unit). Duplicate 
   <li>Standardized pricing values for analytical consistency</li>
   <li>Executed business-focused SQL queries to extract insights</li>
 </ol>
+
+<hr>
 
 <h2><b>SQL Skills Demonstrated</b></h2>
 
@@ -81,6 +91,8 @@ Each row in the dataset represents a unique SKU (Stock Keeping Unit). Duplicate 
   <li>Price-per-unit and value-for-money evaluation</li>
 </ul>
 
+<hr>
+
 <h2><b>Key Business Insights</b></h2>
 <ul>
   <li>Identified top-value products offering the highest discounts</li>
@@ -90,6 +102,8 @@ Each row in the dataset represents a unique SKU (Stock Keeping Unit). Duplicate 
   <li>Segmented products based on weight for inventory planning</li>
   <li>Calculated total inventory weight by category</li>
 </ul>
+
+<hr>
 
 <h2><b>Results & Business Impact</b></h2>
 <p>
@@ -102,6 +116,8 @@ This analysis enables business stakeholders to:
   <li>Identify value-for-money products for promotions</li>
 </ul>
 
+<hr>
+
 <h2><b>How to Run the Project</b></h2>
 <ol>
   <li>Clone the repository</li>
@@ -111,6 +127,8 @@ This analysis enables business stakeholders to:
   <li>Execute the SQL queries for analysis</li>
 </ol>
 
+<hr>
+
 <h2><b>Next Steps</b></h2>
 <ol>
   <li>Integrate the dataset with Power BI or Tableau</li>
@@ -118,4 +136,6 @@ This analysis enables business stakeholders to:
   <li>Apply window functions for advanced analytics</li>
   <li>Extend analysis to customer behavior and demand forecasting</li>
 </ol>
+
+<hr>
 
