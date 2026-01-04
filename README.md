@@ -8,7 +8,7 @@
 This project presents a complete, end-to-end SQL-based data analytics workflow built on a real-world inventory dataset inspired by Zepto, one of India’s fastest-growing quick-commerce platforms.
 </p>
 <p>
-The objective of this project is to simulate how data analysts in retail and e-commerce organizations explore raw catalog data, clean inconsistencies, and generate meaningful business insights related to pricing, inventory, discounts, and revenue optimization using SQL.
+The analysis focuses on pricing accuracy, discount strategies, inventory availability, and revenue optimization to simulate real-world decision-making in quick-commerce businesses.
 </p>
 
 <hr>
@@ -65,7 +65,7 @@ Each row in the dataset represents a unique SKU (Stock Keeping Unit). Duplicate 
 <ol>
   <li>Designed a PostgreSQL table with appropriate data types and constraints</li>
   <li>Imported raw CSV data and resolved encoding issues</li>
-  <li>Performed exploratory data analysis (EDA) to understand data distribution</li>
+  <li>Performed Exploratory Data Analysis using GROUP BY, aggregates, and CASE expressions to understand data distribution</li>
   <li>Identified and removed invalid pricing records</li>
   <li>Standardized pricing values for analytical consistency</li>
   <li>Executed business-focused SQL queries to extract insights</li>
