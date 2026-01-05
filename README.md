@@ -1,141 +1,133 @@
-<h1><b>🛒 DATA ANALYTICS PROJECT – ZEPTO INVENTORY ANALYSIS (SQL)</b></h1>
-<p><b>From Raw Inventory Data to Actionable Business Insights using PostgreSQL</b></p>
+# 🛒 Data Analytics Project – Zepto Inventory Analysis (SQL)
+**From Raw Inventory Data to Actionable Business Insights using PostgreSQL**
 
-<hr>
+---
 
-<h2><b>Executive Summary</b></h2>
-<p>
-This project presents a complete, end-to-end SQL-based data analytics workflow built on a real-world inventory dataset inspired by Zepto, one of India’s fastest-growing quick-commerce platforms.
-</p>
-<p>
-The analysis focuses on pricing accuracy, discount strategies, inventory availability, and revenue optimization to simulate real-world decision-making in quick-commerce businesses.
-</p>
+## 📌 Executive Summary
+This project demonstrates an end-to-end SQL-based data analytics workflow using a real-world inventory dataset inspired by **Zepto**, one of India’s fastest-growing quick-commerce platforms.
 
-<hr>
+The analysis focuses on **pricing accuracy, discount strategies, inventory availability, and revenue contribution**, simulating how data analysts support decision-making in fast-paced e-commerce and retail environments using SQL.
 
-<h2><b>Business Problem</b></h2>
-<p>
-E-commerce platforms manage thousands of SKUs across multiple categories, package sizes, and pricing structures. Raw inventory data often contains inconsistencies such as invalid pricing, duplicate product entries, stock availability issues, and unstructured weight and quantity formats.
-</p>
-<p>
-Without proper data cleaning and structured analysis, businesses struggle to:
-</p>
-<ul>
-  <li>Understand pricing inefficiencies</li>
-  <li>Identify revenue leakage due to stock-outs</li>
-  <li>Evaluate discount strategies</li>
-  <li>Optimize inventory and product assortment</li>
-</ul>
+---
 
-<hr>
+## 🧠 Business Problem
+Quick-commerce platforms manage thousands of SKUs across multiple categories, package sizes, and pricing structures. Raw inventory data often contains issues such as:
 
-<h2><b>Project Objectives</b></h2>
-<ul>
-  <li>Design a structured PostgreSQL database for an e-commerce inventory system</li>
-  <li>Perform exploratory data analysis (EDA) using SQL</li>
-  <li>Clean and standardize messy real-world data</li>
-  <li>Answer business-driven analytical questions using SQL</li>
-  <li>Demonstrate job-ready SQL skills for data analyst roles</li>
-</ul>
+- Invalid or inconsistent pricing  
+- Duplicate product names due to SKU variations  
+- Stock availability gaps  
+- Unstructured weight and quantity formats  
 
-<hr>
+Without proper data cleaning and structured SQL analysis, businesses struggle to:
+- Identify pricing inefficiencies and ineffective discounts  
+- Quantify revenue leakage caused by stock-outs  
+- Optimize inventory allocation across categories  
+- Make data-driven decisions on promotions and assortment planning  
 
-<h2><b>Dataset Overview</b></h2>
-<p>
-Each row in the dataset represents a unique SKU (Stock Keeping Unit). Duplicate product names exist because the same product may appear in different package sizes, weights, discounts, or categories — a common scenario in real e-commerce catalogs.
-</p>
+---
 
-<p><b>Key Columns</b></p>
-<ul>
-  <li><b>sku_id</b> – Unique identifier for each product (Primary Key)</li>
-  <li><b>name</b> – Product name as displayed on the app</li>
-  <li><b>Category</b> – Product category (Fruits, Snacks, Beverages, etc.)</li>
-  <li><b>mrp</b> – Maximum Retail Price (₹)</li>
-  <li><b>discountPercent</b> – Discount percentage applied</li>
-  <li><b>discountedSellingPrice</b> – Final selling price after discount (₹)</li>
-  <li><b>availableQuantity</b> – Units available in inventory</li>
-  <li><b>weightInGms</b> – Product weight in grams</li>
-  <li><b>outOfStock</b> – Stock availability flag (TRUE / FALSE)</li>
-  <li><b>quantity</b> – Number of units per package</li>
-</ul>
+## 🎯 Project Objectives
+- Design a structured PostgreSQL database for an e-commerce inventory system  
+- Perform exploratory data analysis (EDA) using SQL  
+- Clean and standardize messy real-world inventory data  
+- Answer business-driven analytical questions using SQL  
+- Demonstrate job-ready SQL skills for entry-level Data Analyst roles  
 
-<hr>
+---
 
-<h2><b>Methodology</b></h2>
-<ol>
-  <li>Designed a PostgreSQL table with appropriate data types and constraints</li>
-  <li>Imported raw CSV data and resolved encoding issues</li>
-  <li>Performed Exploratory Data Analysis using GROUP BY, aggregates, and CASE expressions to understand data distribution</li>
-  <li>Identified and removed invalid pricing records</li>
-  <li>Standardized pricing values for analytical consistency</li>
-  <li>Executed business-focused SQL queries to extract insights</li>
-</ol>
+## 📂 Dataset Overview
+Each row in the dataset represents a **unique SKU (Stock Keeping Unit)**.  
+Duplicate product names exist because the same product can appear with different weights, package sizes, discounts, or categories — a common scenario in real e-commerce catalogs.
 
-<hr>
+### Key Columns
+- **sku_id** – Unique identifier for each product (Primary Key)  
+- **name** – Product name as displayed on the platform  
+- **Category** – Product category (Fruits, Snacks, Beverages, etc.)  
+- **mrp** – Maximum Retail Price (₹)  
+- **discountPercent** – Discount percentage applied  
+- **discountedSellingPrice** – Final selling price after discount (₹)  
+- **availableQuantity** – Units available in inventory  
+- **weightInGms** – Product weight in grams  
+- **outOfStock** – Stock availability flag (TRUE / FALSE)  
+- **quantity** – Number of units per package  
 
-<h2><b>SQL Skills Demonstrated</b></h2>
+---
 
-<p><b>Core SQL Concepts</b></p>
-<ul>
-  <li>Filtering, sorting, and grouping data</li>
-  <li>Aggregate functions (SUM, AVG, COUNT)</li>
-  <li>CASE WHEN logic for categorization</li>
-  <li>Business metric calculations</li>
-</ul>
+## 🔧 Methodology
+1. Designed a PostgreSQL table with appropriate data types and constraints  
+2. Imported raw CSV data and resolved encoding issues  
+3. Performed exploratory data analysis using `GROUP BY`, aggregate functions, and `CASE` expressions  
+4. Identified and removed invalid pricing records (e.g., zero MRP)  
+5. Standardized pricing values (paise to rupees) for analytical consistency  
+6. Executed business-focused SQL queries to extract insights  
 
-<p><b>Analytical SQL</b></p>
-<ul>
-  <li>Revenue estimation by category</li>
-  <li>Discount analysis and ranking</li>
-  <li>Inventory availability analysis</li>
-  <li>Price-per-unit and value-for-money evaluation</li>
-</ul>
+---
 
-<hr>
+## ❓ Key SQL Questions Answered
+1. Which products offer the highest discount percentages?  
+2. Which high-MRP products are currently out of stock?  
+3. What is the estimated revenue generated by each category?  
+4. Which products have high prices but low discounts?  
+5. Which categories offer the highest average discounts?  
+6. Which products provide the best value-for-money based on price per gram?  
+7. How can products be segmented into Low, Medium, and Bulk categories based on weight?  
+8. What is the total inventory weight per category?  
+9. **(Advanced – Window Function)** Which is the top revenue-generating product in each category that is currently in stock?  
+10. **(Advanced – Subquery)** What percentage of total revenue does each category contribute?  
 
-<h2><b>Key Business Insights</b></h2>
-<ul>
-  <li>Identified top-value products offering the highest discounts</li>
-  <li>Detected high-MRP products that are unavailable due to stock-outs</li>
-  <li>Estimated potential revenue contribution by product category</li>
-  <li>Highlighted categories with aggressive discounting strategies</li>
-  <li>Segmented products based on weight for inventory planning</li>
-  <li>Calculated total inventory weight by category</li>
-</ul>
+---
 
-<hr>
+## 🛠 SQL Skills Demonstrated
 
-<h2><b>Results & Business Impact</b></h2>
-<p>
+### Core SQL
+- Filtering, sorting, and grouping data  
+- Aggregate functions (`SUM`, `AVG`, `COUNT`)  
+- `CASE WHEN` logic for categorization  
+- Data cleaning and validation  
+
+### Analytical SQL
+- Revenue estimation and contribution analysis  
+- Discount effectiveness analysis  
+- Inventory availability and stock-out analysis  
+- Value-for-money and pricing efficiency evaluation  
+- Window functions (`ROW_NUMBER`) for category-level ranking  
+
+---
+
+## 📊 Key Business Insights
+- Identified top discounted products suitable for promotional campaigns  
+- Highlighted high-MRP products causing potential revenue loss due to stock-outs  
+- Revealed category-wise revenue contribution patterns  
+- Identified categories with aggressive discounting strategies  
+- Segmented inventory by weight to support logistics and planning  
+
+---
+
+## 🚀 Results & Business Impact
 This analysis enables business stakeholders to:
-</p>
-<ul>
-  <li>Improve pricing and discount strategies</li>
-  <li>Reduce revenue loss caused by out-of-stock products</li>
-  <li>Optimize inventory distribution across categories</li>
-  <li>Identify value-for-money products for promotions</li>
-</ul>
+- Improve pricing and discount strategies  
+- Reduce revenue leakage caused by inventory stock-outs  
+- Optimize inventory allocation across categories  
+- Identify high-value and high-impact products for promotions  
 
-<hr>
+---
 
-<h2><b>How to Run the Project</b></h2>
-<ol>
-  <li>Clone the repository</li>
-  <li>Create a PostgreSQL database</li>
-  <li>Run the SQL file to create tables</li>
-  <li>Import the dataset (ensure UTF-8 encoding)</li>
-  <li>Execute the SQL queries for analysis</li>
-</ol>
+## ▶️ How to Run the Project
+1. Clone the repository  
+2. Create a PostgreSQL database  
+3. Run the SQL file to create tables  
+4. Import the dataset (ensure UTF-8 encoding)  
+5. Execute the SQL queries for analysis  
 
-<hr>
+---
 
-<h2><b>Next Steps</b></h2>
-<ol>
-  <li>Integrate the dataset with Power BI or Tableau</li>
-  <li>Create automated data refresh pipelines</li>
-  <li>Apply window functions for advanced analytics</li>
-  <li>Extend analysis to customer behavior and demand forecasting</li>
-</ol>
+## 🔮 Next Steps
+- Develop an interactive **Power BI dashboard** to visualize revenue, discounts, and inventory health  
+- Expand SQL analysis using additional **window functions** for ranking and trend-based insights  
+- Automate data ingestion and cleaning workflows using **SQL scripts or Power Query**  
+- Extend the analysis to support **inventory planning and stock replenishment insights**  
 
-<hr>
+---
 
+## 👨‍💼 Final Note
+This project is designed to reflect how SQL is used in real-world e-commerce analytics — focusing on **clean data, meaningful metrics, and business impact**, rather than just query complexity.
