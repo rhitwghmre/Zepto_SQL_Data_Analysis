@@ -121,6 +121,14 @@ This analysis enables business stakeholders to:
 
 ---
 
+## 📁 Files in Repository
+
+- **zepto_SQL_Project.sql** – Complete SQL analysis: table creation, data cleaning, and business queries (Q1–Q10)  
+- **zepto_v2.csv** – Raw inventory dataset used for analysis  
+- **README.md** – Project overview, methodology, and insights  
+
+---
+
 ## 🔮 Next Steps
 - Develop an interactive **Power BI dashboard** to visualize revenue, discounts, and inventory health  
 - Expand SQL analysis using additional **window functions** for ranking and trend-based insights  
